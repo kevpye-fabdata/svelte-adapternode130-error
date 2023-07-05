@@ -1,0 +1,30 @@
+@import 'filepond/dist/filepond.css';
+@import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+
+@font-face {
+	/* Reference name */
+	font-family: 'DM Sans';
+	/* For multiple files use commas, ex: url(), url(), ... */
+	src: url('/fonts/DMSans-Regular.ttf'), url('/fonts/DMSans-Bold.ttf'),
+		url('/fonts/DMSans-BoldItalic.ttf'), url('/fonts/DMSans-Italic.ttf'),
+		url('/fonts/DMSans-Medium.ttf'), url('/fonts/DMSans-MediumItalic.ttf');
+}
+
+:root {
+	--theme-font-family-base: 'DM Sans', sans-serif;
+	--theme-font-family-heading: 'DM Sans', sans-serif;
+	/* ... */
+}
+
+/*place global styles here */
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+.filepond--wrapper * {
+	font-family: 'DM Sans';
+}
+.filepond--image-preview {
+	background: white;
+}
